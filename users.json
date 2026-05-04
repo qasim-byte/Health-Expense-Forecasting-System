@@ -1,0 +1,625 @@
+{
+    "1234": {
+        "password": "a18ffd816b3125822d18e309fbef97bf13e7a90c520b0493b162f50c37a7255b",
+        "name": "Muhammad Qasim Ashfaq",
+        "reports": [
+            {
+                "timestamp": "2026-05-03T10:12:15.210485",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 20,
+                        "gender": "Male",
+                        "bmi": 21.0,
+                        "smoker": "No",
+                        "diabetes": "Yes",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "Yes",
+                        "physical_activity_level": "Medium",
+                        "daily_steps": 5000,
+                        "sleep_hours": 8.0,
+                        "stress_level": 1,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 3,
+                        "insurance_type": "Private",
+                        "insurance_coverage_pct": 70,
+                        "city_type": "Urban",
+                        "previous_year_cost": 1000.0
+                    },
+                    "prediction": 2363.8209000000006,
+                    "suggestions": []
+                }
+            },
+            {
+                "timestamp": "2026-05-03T12:09:22.975946",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 0,
+                        "insurance_type": "None",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 0.0
+                    },
+                    "prediction": 3722.613000000001,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes.",
+                        "Explore health insurance options to cover potential medical expenses."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-03T12:10:08.911519",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 28,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "Yes",
+                        "hypertension": "Yes",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 1,
+                        "medication_count": 2,
+                        "insurance_type": "Private",
+                        "insurance_coverage_pct": 80,
+                        "city_type": "Rural",
+                        "previous_year_cost": 2000.0
+                    },
+                    "prediction": 3618.6059999999998,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-03T12:11:41.334801",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 4,
+                        "medication_count": 2,
+                        "insurance_type": "Government",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 7855.0
+                    },
+                    "prediction": 14637.791299999992,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes.",
+                        "Consider consulting with an insurance advisor for better coverage options."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-03T12:14:00.406045",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 0,
+                        "insurance_type": "Government",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 5000.0
+                    },
+                    "prediction": 4032.0312999999996,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-03T12:16:53.983891",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 5,
+                        "insurance_type": "Government",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 0.0
+                    },
+                    "prediction": 4776.388799999999,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-03T12:18:07.465560",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 0,
+                        "insurance_type": "Private",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 2000.0
+                    },
+                    "prediction": 3860.4958000000006,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-03T12:21:30.678148",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 0,
+                        "insurance_type": "Private",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 8555.0
+                    },
+                    "prediction": 4934.6006,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-03T12:25:45.623359",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 5,
+                        "insurance_type": "Private",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 560.0
+                    },
+                    "prediction": 4776.388799999999,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-03T14:15:54.302386",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 5,
+                        "insurance_type": "None",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 0.0
+                    },
+                    "prediction": 4776.388799999999,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes.",
+                        "Explore health insurance options to cover potential medical expenses."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-03T14:23:05.283286",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 0,
+                        "insurance_type": "None",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 0.0
+                    },
+                    "prediction": 3722.613000000001,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes.",
+                        "Explore health insurance options to cover potential medical expenses."
+                    ]
+                }
+            },
+            {
+                "timestamp": "2026-05-04T11:09:21.910556",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 20,
+                        "gender": "Male",
+                        "bmi": 22.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Medium",
+                        "daily_steps": 5000,
+                        "sleep_hours": 8.0,
+                        "stress_level": 2,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 2,
+                        "insurance_type": "Government",
+                        "insurance_coverage_pct": 70,
+                        "city_type": "Urban",
+                        "previous_year_cost": 0.0
+                    },
+                    "prediction": 1830.3609000000004,
+                    "suggestions": []
+                }
+            }
+        ],
+        "created_at": "2026-05-03T10:06:57.958454"
+    },
+    "Arman": {
+        "password": "a654a35c8efe3981583d021b4f323c8a27f4976a756258c30c077e911cbb3fd2",
+        "name": "Arman",
+        "reports": [],
+        "created_at": "2026-05-03T12:27:49.413776"
+    },
+    "ashfaq": {
+        "password": "abc1bf9cc40b503f554436a8c208c5fd829738a8f87eddfc71a081e28e89d599",
+        "name": "Ashfaq Ahmad",
+        "reports": [
+            {
+                "timestamp": "2026-05-03T12:45:00.300726",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Ashfaq Ahmad",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 22.5,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "High",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.5,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 2,
+                        "insurance_type": "Government",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Urban",
+                        "previous_year_cost": 500.0
+                    },
+                    "prediction": 4033.9111,
+                    "suggestions": []
+                }
+            }
+        ],
+        "created_at": "2026-05-03T12:43:48.422445"
+    },
+    "KaleemUllah": {
+        "password": "15e9b7696e5919ec782671008e1c6e4b46f613cd9b1f933593897104d7561a8c",
+        "name": "Kaleem Ullah",
+        "reports": [
+            {
+                "timestamp": "2026-05-03T13:19:03.414247",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Kaleem Ullah",
+                        "age": 19,
+                        "gender": "Male",
+                        "bmi": 20.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Medium",
+                        "daily_steps": 5000,
+                        "sleep_hours": 8.0,
+                        "stress_level": 3,
+                        "doctor_visits_per_year": 1,
+                        "hospital_admissions": 0,
+                        "medication_count": 1,
+                        "insurance_type": "Private",
+                        "insurance_coverage_pct": 100,
+                        "city_type": "Semi-Urban",
+                        "previous_year_cost": 100.0
+                    },
+                    "prediction": 602.3173999999998,
+                    "suggestions": []
+                }
+            }
+        ],
+        "created_at": "2026-05-03T13:17:09.655730"
+    },
+    "bnbnbn": {
+        "password": "3d53aa681cdffb75951564b0d860db28783ccc85ffd263c1e2dadcab186ad8d0",
+        "name": "hello bn",
+        "reports": [
+            {
+                "timestamp": "2026-05-03T14:26:49.113795",
+                "data": {
+                    "input_data": {
+                        "patient_name": "hello bn",
+                        "age": 35,
+                        "gender": "Female",
+                        "bmi": 28.0,
+                        "smoker": "Yes",
+                        "diabetes": "Yes",
+                        "hypertension": "Yes",
+                        "heart_disease": "Yes",
+                        "asthma": "Yes",
+                        "physical_activity_level": "High",
+                        "daily_steps": 10000,
+                        "sleep_hours": 16.0,
+                        "stress_level": 10,
+                        "doctor_visits_per_year": 8,
+                        "hospital_admissions": 6,
+                        "medication_count": 6,
+                        "insurance_type": "Government",
+                        "insurance_coverage_pct": 100,
+                        "city_type": "Urban",
+                        "previous_year_cost": 100000.0
+                    },
+                    "prediction": 2084.4577000000013,
+                    "suggestions": [
+                        "Consider quitting smoking to potentially reduce medical costs by up to 20-30%.",
+                        "Practice stress management techniques like meditation or yoga."
+                    ]
+                }
+            }
+        ],
+        "created_at": "2026-05-03T14:25:16.724010"
+    },
+    "qasimashfaq12": {
+        "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+        "name": "Muhammad Qasim Ashfaq",
+        "reports": [
+            {
+                "timestamp": "2026-05-04T11:26:33.635211",
+                "data": {
+                    "input_data": {
+                        "patient_name": "Muhammad Qasim Ashfaq",
+                        "age": 21,
+                        "gender": "Male",
+                        "bmi": 21.0,
+                        "smoker": "No",
+                        "diabetes": "Yes",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "Yes",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 4000,
+                        "sleep_hours": 7.5,
+                        "stress_level": 1,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 5,
+                        "insurance_type": "Private",
+                        "insurance_coverage_pct": 100,
+                        "city_type": "Urban",
+                        "previous_year_cost": 0.0
+                    },
+                    "prediction": 798.9781999999997,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes."
+                    ]
+                }
+            }
+        ],
+        "created_at": "2026-05-04T11:25:18.075766"
+    },
+    "Euclid": {
+        "password": "b7366210f394ddb5eaa556de7d776419120fcdbb32e297d8c5486abe0764dba5",
+        "name": "Euclid thomson",
+        "reports": [],
+        "created_at": "2026-05-04T11:25:48.777330"
+    },
+    "John": {
+        "password": "b7366210f394ddb5eaa556de7d776419120fcdbb32e297d8c5486abe0764dba5",
+        "name": "John venn",
+        "reports": [
+            {
+                "timestamp": "2026-05-04T11:29:48.239617",
+                "data": {
+                    "input_data": {
+                        "patient_name": "John venn",
+                        "age": 16,
+                        "gender": "Female",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 200,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 0,
+                        "hospital_admissions": 0,
+                        "medication_count": 0,
+                        "insurance_type": "Government",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Urban",
+                        "previous_year_cost": 0.0
+                    },
+                    "prediction": 3840.1715999999997,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes."
+                    ]
+                }
+            }
+        ],
+        "created_at": "2026-05-04T11:28:18.126008"
+    },
+    "1122": {
+        "password": "e89ea4fc408e1f72835c65595b9e56f1a173cd3690ac3743187566fe1c405a81",
+        "name": "M. Kaleem-ullah",
+        "reports": [],
+        "created_at": "2026-05-04T11:29:29.926679"
+    },
+    "112233": {
+        "password": "e89ea4fc408e1f72835c65595b9e56f1a173cd3690ac3743187566fe1c405a81",
+        "name": "M. Kaleem-ullah",
+        "reports": [
+            {
+                "timestamp": "2026-05-04T11:30:17.564483",
+                "data": {
+                    "input_data": {
+                        "patient_name": "M. Kaleem-ullah",
+                        "age": 30,
+                        "gender": "Male",
+                        "bmi": 25.0,
+                        "smoker": "No",
+                        "diabetes": "No",
+                        "hypertension": "No",
+                        "heart_disease": "No",
+                        "asthma": "No",
+                        "physical_activity_level": "Low",
+                        "daily_steps": 5000,
+                        "sleep_hours": 7.0,
+                        "stress_level": 5,
+                        "doctor_visits_per_year": 2,
+                        "hospital_admissions": 0,
+                        "medication_count": 0,
+                        "insurance_type": "None",
+                        "insurance_coverage_pct": 50,
+                        "city_type": "Rural",
+                        "previous_year_cost": 0.0
+                    },
+                    "prediction": 3722.613000000001,
+                    "suggestions": [
+                        "Increase physical activity to at least moderate levels for better health outcomes.",
+                        "Explore health insurance options to cover potential medical expenses."
+                    ]
+                }
+            }
+        ],
+        "created_at": "2026-05-04T11:29:43.150869"
+    }
+}
