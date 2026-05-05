@@ -37,115 +37,77 @@ def add_bg_from_local(image_file):
 def local_css():
     st.markdown("""
     <style>
-    /* --- SHARED THEME VARIABLES --- */
-    :root {
-        --glass-bg: rgba(128, 128, 128, 0.1);
-        --glass-border: rgba(128, 128, 128, 0.2);
-    }
-
-    /* --- FROSTED GLASS SIDEBAR --- */
+    /* --- DARK THEME OPTIMIZATION --- */
+    
+    /* 1. Frosted Glass Sidebar with a slight light border for definition */
     [data-testid="stSidebar"] {
-        background-color: var(--glass-bg) !important;
-        backdrop-filter: blur(15px) saturate(160%) !important;
-        -webkit-backdrop-filter: blur(15px) saturate(160%) !important;
-        border-right: 1px solid var(--glass-border);
+        background-color: rgba(255, 255, 255, 0.03) !important;
+        backdrop-filter: blur(20px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    /* Keep sidebar text aligned with theme but ensure visibility */
+    /* Force Sidebar text to white for visibility on dark background */
     [data-testid="stSidebar"] .stMarkdown, 
     [data-testid="stSidebar"] label,
     [data-testid="stSidebar"] p {
-        color: var(--text-color) !important;
+        color: #FFFFFF !important;
     }
 
-    /* --- MAIN CONTENT ADJUSTMENTS --- */
-    header[data-testid="stHeader"] {
-        background-color: rgba(0,0,0,0) !important;
-    }
-
-    .block-container {
-        padding-top: 2rem !important;
-    }
-
-    /* --- COMPONENT STYLING --- */
-    
-    /* 1. Main Header */
-    .main-header {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: var(--text-color);
-        text-align: center;
-        padding: 1.5rem;
-        background: var(--glass-bg);
-        backdrop-filter: blur(20px);
+    /* 2. Main Containers - Increased opacity slightly for the dark bg */
+    .main-header, .prediction-box, .health-metric, .suggestion-item {
+        background: rgba(255, 255, 255, 0.05) !important;
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
         border-radius: 18px;
-        border: 1px solid var(--glass-border);
+        color: white !important;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Heavier shadow for depth */
     }
 
-    /* 2. Prediction Box */
-    .prediction-box {
-        background: var(--glass-bg) !important; 
-        backdrop-filter: blur(16px) saturate(180%);
-        border: 1px solid var(--glass-border) !important;
-        border-radius: 15px;
-        padding: 2rem;
-        margin: 2rem 0;
-        text-align: center;
+    /* 3. High-Contrast Text for Dark Mode */
+    .main-header {
+        font-size: 2.8rem;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
 
-    /* 3. Prediction Amount - Cyan stays for pop, but with better contrast */
     .prediction-amount {
-        font-size: 3rem !important;
-        font-weight: 800 !important;
-        color: #00d4ff !important; 
-        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        color: #00f2ff !important; /* Brighter Cyan for the dark bg */
+        text-shadow: 0 0 20px rgba(0, 242, 255, 0.6);
+        font-size: 3.5rem !important;
+        font-weight: 800;
     }
 
-    /* 4. Notifications / Info Boxes */
+    /* 4. Notifications - Using a dark tint to prevent "blinding" light boxes */
     div[data-testid="stNotification"] {
-        background-color: var(--secondary-background-color) !important;
-        backdrop-filter: blur(12px) !important;
-        border: 1px solid var(--glass-border) !important;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        backdrop-filter: blur(10px) !important;
+        border: 1px solid rgba(0, 242, 255, 0.3) !important; /* Cyan border accent */
         border-radius: 12px !important;
     }
 
-    /* Force all text in notifications to follow theme color */
     div[data-testid="stNotification"] * {
-        color: var(--text-color) !important;
+        color: #00f2ff !important; /* Cyan text inside notifications for style */
     }
 
-    /* 5. Health Metrics & Liquid Glass */
-    .health-metric, .suggestion-item {
-        background: var(--glass-bg) !important;
-        backdrop-filter: blur(8px);
-        border-radius: 12px;
-        padding: 1.2rem;
-        margin: 0.8rem 0;
-        border: 1px solid var(--glass-border);
-    }
-
-    .metric-label {
-        font-weight: bold;
-        color: var(--text-color);
-        text-align: center;
-    }
-
-    /* Glass Tube visibility fix */
+    /* 5. Liquid Glass Metrics - Improved Contrast */
     .glass-tube {
-        background: rgba(128, 128, 128, 0.1);
-        border: 2px solid var(--glass-border);
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 2px solid rgba(255, 255, 255, 0.2) !important;
     }
 
-    /* --- PRINT FIX --- */
-    @media print {
-        .print-friendly {
-            background: white !important;
-            color: black !important;
-            border: 1px solid #ccc !important;
-        }
+    .metric-label { color: #FFFFFF !important; }
+    .metric-value { color: #00f2ff !important; }
+
+    /* 6. Sidebar Input Fix */
+    [data-testid="stSidebar"] div[data-baseweb="select"],
+    [data-testid="stSidebar"] div[data-baseweb="input"] {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
     }
+
     </style>
     """, unsafe_allow_html=True)
+
 
 
 
