@@ -37,256 +37,116 @@ def add_bg_from_local(image_file):
 def local_css():
     st.markdown("""
     <style>
-                    /* --- FROSTED GLASS SIDEBAR --- */
-    [data-testid="stSidebar"] {
-        background-color: rgba(255, 255, 255, 0.05) !important; /* Very faint white tint */
-        backdrop-filter: blur(15px) saturate(160%) !important;
-        -webkit-backdrop-filter: blur(15px) saturate(160%) !important;
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    /* --- SHARED THEME VARIABLES --- */
+    :root {
+        --glass-bg: rgba(128, 128, 128, 0.1);
+        --glass-border: rgba(128, 128, 128, 0.2);
     }
 
-    /* Style sidebar text and labels to be white */
+    /* --- FROSTED GLASS SIDEBAR --- */
+    [data-testid="stSidebar"] {
+        background-color: var(--glass-bg) !important;
+        backdrop-filter: blur(15px) saturate(160%) !important;
+        -webkit-backdrop-filter: blur(15px) saturate(160%) !important;
+        border-right: 1px solid var(--glass-border);
+    }
+
+    /* Keep sidebar text aligned with theme but ensure visibility */
     [data-testid="stSidebar"] .stMarkdown, 
     [data-testid="stSidebar"] label,
-    [data-testid="stSidebar"] .stSelectbox p {
-        color: white !important;
+    [data-testid="stSidebar"] p {
+        color: var(--text-color) !important;
     }
-        /* Make the top Streamlit bar transparent */
+
+    /* --- MAIN CONTENT ADJUSTMENTS --- */
     header[data-testid="stHeader"] {
         background-color: rgba(0,0,0,0) !important;
     }
 
-    /* Adjust main content padding to move things up slightly */
     .block-container {
         padding-top: 2rem !important;
     }
 
-    /* Make sidebar input boxes slightly glass-like too */
-    [data-testid="stSidebar"] div[data-baseweb="select"],
-    [data-testid="stSidebar"] div[data-baseweb="input"] {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        border-radius: 8px !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    }
-
+    /* --- COMPONENT STYLING --- */
+    
     /* 1. Main Header */
     .main-header {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: bold;
-        color: white;
+        color: var(--text-color);
         text-align: center;
-        padding: 18px;
-        background: rgba(8,18,38,0.55);
+        padding: 1.5rem;
+        background: var(--glass-bg);
         backdrop-filter: blur(20px);
         border-radius: 18px;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+        border: 1px solid var(--glass-border);
     }
 
-    /* 2. Prediction Box (Frosted Glass) */
+    /* 2. Prediction Box */
     .prediction-box {
-        background: rgba(255, 255, 255, 0.07) !important; 
+        background: var(--glass-bg) !important; 
         backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        border: 1px solid var(--glass-border) !important;
         border-radius: 15px;
         padding: 2rem;
         margin: 2rem 0;
-        color: #ffffff !important; 
         text-align: center;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     }
 
-    /* 3. Prediction Amount - Changed from Blue to Cyan for readability */
+    /* 3. Prediction Amount - Cyan stays for pop, but with better contrast */
     .prediction-amount {
-        font-size: 3.5rem !important;
+        font-size: 3rem !important;
         font-weight: 800 !important;
-        margin: 1rem 0 !important;
-        color: #00d4ff !important; /* Electric Cyan glow */
-        text-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+        color: #00d4ff !important; 
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     }
 
-        /* Target all info/warning/success boxes */
+    /* 4. Notifications / Info Boxes */
     div[data-testid="stNotification"] {
-        background-color: rgba(255, 255, 255, 0.18) !important; /* Slightly more opaque */
-        backdrop-filter: blur(12px) saturate(160%) !important;
-        border: 1px solid rgba(255, 255, 255, 0.25) !important;
-        border-radius: 12px;
-    }
-    
-
-    
-        /* The Nuclear Option for Info Boxes */
-    div[data-testid="stNotification"] {
-        /* Using a dark glass tint (rgba 0,0,0) makes white text pop way better than light glass */
-        background-color: rgba(0, 0, 0, 0.4) !important; 
-        backdrop-filter: blur(15px) saturate(160%) !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        background-color: var(--secondary-background-color) !important;
+        backdrop-filter: blur(12px) !important;
+        border: 1px solid var(--glass-border) !important;
         border-radius: 12px !important;
     }
 
-    /* This targets EVERY child element inside the notification to force them to white */
+    /* Force all text in notifications to follow theme color */
     div[data-testid="stNotification"] * {
-        color: #FFFFFF !important;
-        font-weight: 600 !important;
-        text-shadow: 0px 1px 2px rgba(0,0,0,0.8) !important;
+        color: var(--text-color) !important;
     }
 
-    /* Specific fix for the SVG icon */
-    div[data-testid="stNotification"] svg {
-        fill: white !important;
-        color: white !important;
-    }
-
-    }
-
-    /* 5. Health Metrics & Suggestions (Glassified) */
+    /* 5. Health Metrics & Liquid Glass */
     .health-metric, .suggestion-item {
-        background: rgba(255, 255, 255, 0.05) !important;
+        background: var(--glass-bg) !important;
         backdrop-filter: blur(8px);
         border-radius: 12px;
         padding: 1.2rem;
         margin: 0.8rem 0;
-        color: white !important;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-    .health-metric { border-left: 5px solid #3498DB !important; }
-    .suggestion-item { border-left: 5px solid #27AE60 !important; }
-
-    /* 6. Print Styles */
-        /* --- GLASS REPORT CONTAINER --- */
-    .print-friendly {
-        /* Glass effect for the app screen */
-        background: rgba(255, 255, 255, 0.08) !important;
-        backdrop-filter: blur(15px) saturate(160%);
-        -webkit-backdrop-filter: blur(15px) saturate(160%);
-        
-        color: white !important;
-        padding: 2rem !important;
-        border-radius: 15px !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.3) !important;
-        margin: 1rem 0 !important;
-    }
-
-    /* Hide the box if it's empty so it doesn't show a ghost outline */
-    .print-friendly:empty {
-        display: none !important;
-    }
-
-    /* 7. Liquid Glass Containers for Health Summary */
-    .liquid-glass-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem 0.5rem;
-        width: 120px;
-    }
-
-    .glass-tube {
-        position: relative;
-        width: 60px;
-        height: 180px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 30px 30px 10px 10px;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        overflow: hidden;
-        box-shadow:
-            inset 0 0 20px rgba(0, 0, 0, 0.2),
-            0 8px 20px rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(5px);
-    }
-
-    .glass-tube::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 10px;
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 30px 30px 0 0;
-        z-index: 2;
-    }
-
-    .liquid-fill {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(to top, rgba(0, 212, 255, 0.8), rgba(0, 150, 255, 0.9));
-        border-radius: 0 0 8px 8px;
-        transition: height 1.5s ease-in-out;
-        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
-    }
-
-    .liquid-fill.good {
-        background: linear-gradient(to top, rgba(46, 204, 113, 0.8), rgba(39, 174, 96, 0.9));
-    }
-
-    .liquid-fill.warning {
-        background: linear-gradient(to top, rgba(241, 196, 15, 0.8), rgba(243, 156, 18, 0.9));
-    }
-
-    .liquid-fill.danger {
-        background: linear-gradient(to top, rgba(231, 76, 60, 0.8), rgba(192, 57, 43, 0.9));
-    }
-
-    .glass-base {
-        width: 80px;
-        height: 10px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 5px;
-        margin-top: -5px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border: 1px solid var(--glass-border);
     }
 
     .metric-label {
-        margin-top: 10px;
         font-weight: bold;
-        color: white;
-        text-align: center;
-        font-size: 0.9rem;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-    }
-
-    .metric-value {
-        color: #00d4ff;
-        font-weight: 800;
-        font-size: 1.1rem;
-        margin-top: 5px;
+        color: var(--text-color);
         text-align: center;
     }
 
-    .liquid-glass-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        margin: 2rem 0;
+    /* Glass Tube visibility fix */
+    .glass-tube {
+        background: rgba(128, 128, 128, 0.1);
+        border: 2px solid var(--glass-border);
     }
-    
-    /* --- AUTOMATIC PRINT CONVERSION --- */
+
+    /* --- PRINT FIX --- */
     @media print {
         .print-friendly {
-            /* Switch to ink-friendly white for paper printing */
             background: white !important;
             color: black !important;
-            backdrop-filter: none !important;
-            -webkit-backdrop-filter: none !important;
-            box-shadow: none !important;
-            border: 1px solid #eee !important;
-            margin: 0 !important;
-            width: 100% !important;
-        }
-        /* Hide everything else (buttons, sidebar, background) when printing */
-        .stButton, .stForm, .stTabs, .stSidebar, [data-testid="stHeader"] {
-            display: none !important;
+            border: 1px solid #ccc !important;
         }
     }
-
     </style>
     """, unsafe_allow_html=True)
+
 
 
 # Function to generate liquid glass container HTML
